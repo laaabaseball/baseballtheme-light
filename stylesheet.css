@@ -1,5 +1,5 @@
 /* =============================================================== */
-/*===============baseballtheme-light v1 by laaabaseball ==============*/
+/*===============baseballtheme-light v1.1 by laaabaseball ==============*/
 /*     questions about this theme? just message laaabaseball       */
 /* using something in this theme? Let me know! http://redd.it/vkaqg*/
 /* =============================================================== */
@@ -882,7 +882,7 @@ padding: 2px;
     display: block;
     text-align: left; 
     vertical-align: bottom;
-    padding: 5px 48px 5px 5px;
+    padding: 5px 48px 0px 5px;
     padding-top: 75px;
     color: #ffffff;
     font-weight: normal;

@@ -1,0 +1,1367 @@
+/* =============================================================== */
+/* ===============baseballtheme-light v. 2 by laaabaseball =========== */
+/*     questions about this theme? just message laaabaseball       */
+/* using something in this theme? Let me know! http://redd.it/vkaqg*/
+/* =============================================================== */
+
+/* =============================================================== */
+/* ====== SIDEBAR IMAGE - EDIT IN HERE ====== */
+
+/* SIDEBAR IMAGE INSTRUCTIONS
+==================================================================
+
+remove .disable to enable these features
+
+
+How To - Upload a picture and name it featured (under new image name)
+CHANGE this padding-top value to correct image height
+
+================================================================== */
+ .disable.titlebox {
+    padding-top: 550px!important;
+    }
+
+/* SIDEBAR IMAGE CAPTION INSTRUCTIONS
+==================================================================
+Want a caption for the image? Change text after the word content
+inside the quotes making sure to leave the quotes intact
+================================================================== */
+.disable.titlebox:before {
+    content: " ";
+    }
+
+ .disable.titlebox {
+    background-image: url(%%featured%%);
+    background-position: top;
+    background-repeat: repeat-x;
+    }
+.disable.titlebox:before {
+    font-weight: 700;
+    color: #fff;
+    background-color: transparent;
+    border-radius: 3px;
+    font-size: 11px;
+    text-shadow: 1px 1px 1px black, -1px -1px 1px black, -1px 1px 1px black, 1px -1px 1px #000;
+    }
+
+
+
+/* =============================================================== */
+/* ===== Don't venture below unless you know what you're doing === */
+/* =============================================================== */
+/* =============================================================== */
+/* =============================================================== */
+/* =============================================================== */
+/* ======================== I warned you! ======================== */
+
+
+/* header - replace with an image for a header image
+------------------------------------------------------------------ */
+#header {
+background: #369;
+    background-image: -webkit-linear-gradient(top,#369,#2A547D);
+    background-image: -moz-linear-gradient(top,#369,#2A547D);
+    background-image: -ms-linear-gradient(top,#369,#2A547D);
+    background-image: -o-linear-gradient(top,#369,#2A547D);
+    }
+
+/* body color*/
+body {
+background-color:#FFF;
+
+    }
+
+/* Smaller text size
+------------------------------------------------------------------ */
+.link .title {
+    line-height: 18px;
+    font-size: 14px !important;
+    }
+span[class="hover pagename redditname"] a {
+    font-size: 1em !important;
+    }
+
+
+/* Number of subscriber and users here now
+------------------------------------------------------------------ */
+.titlebox .word {
+    font-size:0px
+    }
+.subscribers .number {
+
+font-weight: bold;
+
+font-size: 17px;
+
+}
+
+.titlebox .subscribers .word:after {
+    content: " baseball players";
+font-size:14px;
+    }
+.users-online .number{
+font-weight: bold;
+font-size: 17px;
+}
+
+.titlebox .users-online .word:before {
+    content: " at bat";
+
+font-size:14px;
+
+    }
+
+/* Sticky menu bar
+------------------------------------------------------------------ */
+.titlebox form {
+    position: static;
+    }
+
+/* Turns top quote in sidebar into menu container
+------------------------------------------------------------------ */
+
+.titlebox blockquote:first-child {
+    border-left: none;
+    position: absolute;
+    z-index: 9999;
+    top: 0px;
+    left: 0px;
+    }
+
+/* Turns first paragraph into menu title
+------------------------------------------------------------------ */
+
+.titlebox blockquote:first-child p:first-child {
+    margin-top: 1px;
+    padding: 1px;
+    font-size: 11px;
+    font-weight: 700;
+    color: #000;
+    display: inline-block;
+    margin-right: .5em;
+    border-radius: 2px;
+    cursor: default;
+    }
+
+/* Turns the lists into menus
+------------------------------------------------------------------ */
+
+.titlebox blockquote ul {
+    float: right;
+    padding: 1px;
+    border: 1px solid #aaa;
+    background-color: #369 !important;
+    margin: 0;
+    margin-left: 4px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    }
+
+.titlebox blockquote ul:hover {
+    border: 1px solid #aaa;
+    }
+
+.titlebox blockquote ul li {
+    display: none;
+    text-align: center;
+    font-weight: 700;
+    color: #2e2e2e;
+    }
+
+.titlebox blockquote li a {
+    display: block;
+    font-weight: 400;
+    text-transform: none !important;
+    color: #000;
+    }
+
+.titlebox blockquote ul li:first-child,
+.titlebox blockquote ul:hover li {
+    display: block;
+    background-color: transparent;
+    }
+
+.titlebox blockquote li:first-child {
+    font-size: 12px;
+    font-weight: 700;
+    color: gray;
+    background: transparent;
+    display: inline-block;
+    border: 0 solid #dbdbdb;
+    border-radius: 5px;
+    cursor: default;
+    }
+
+/* Styling menu items
+------------------------------------------------------------------ */
+
+.titlebox blockquote:first-child ul li:hover {
+    background: #eee;
+    }
+
+.titlebox blockquote:first-child a {
+    padding: 3px;
+    font-weight: 700;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding-top: 0;
+    }
+
+.titlebox blockquote li a:hover {
+    color: #000;
+    }
+
+/* Custom size for menu sections
+------------------------------------------------------------------ */
+
+.titlebox blockquote ul,
+.titlebox blockquote:first-child ul li,
+.titlebox blockquote:first-child a,
+.titlebox blockquote ul:hover {
+    background-color: #cecece !important;
+    }
+
+/* Spoilers
+------------------------------------------------------------------ */
+
+a[href="/s"] {
+    font-size: 0;
+    cursor: default;
+    visibility: hidden;
+    }
+
+a[href="/s"]::after {
+    content: attr(title);
+    background: #cee3f8;
+    color: #cee3f8;
+    font-size: small;
+    padding: 0 !important;
+    visibility: visible;
+    }
+
+a[href="/s"]:hover::after,
+a[href="/s"]:active::after {
+    color: #000;
+    }
+
+a[href$="/spoiler"] {
+    background: #000 !important;
+    color: #000 !important
+    }
+a[href$="/spoiler"]:hover {
+    color: #fff !important
+    }
+
+/* Awesome tables
+------------------------------------------------------------------ */
+.md table {
+    margin-top: 7px !important;
+    margin-bottom: 10px;
+    width: auto;
+    box-shadow: 2px 2px 2px #ccc;
+    border: 1px solid #e8e8e8;
+    background-color: #fff;
+    }
+
+.side .md table {
+    vertical-align: middle;
+    text-align: center;
+    width: 95% !important;
+    }
+
+.md tr:nth-of-type(odd) {
+    background: #f7f6f6;
+    color: #363636;
+    }
+
+.md tr:nth-of-type(even) {
+    background: #fff;
+    color: #363636;
+    }
+
+.side .md table:nth-of-type(odd) th {
+    border-right: none;
+    }
+
+.md table th {
+
+background: #369;
+    background-image: -webkit-linear-gradient(top,#369,#2A547D);
+    background-image: -moz-linear-gradient(top,#369,#2A547D);
+    background-image: -ms-linear-gradient(top,#369,#2A547D);
+    background-image: -o-linear-gradient(top,#369,#2A547D);
+    border: none;
+    color: #fff;
+    font-weight: 700;
+    padding: .5em;
+    text-align: center;
+    }
+
+.md table td {
+    border-top: none;
+    border-left: none;
+    border-bottom: 2px solid #e8e8e8;
+    border-right: 2px solid #eee;
+    padding: 2px 5px;
+    font-size: .9em;
+    color: #000;
+    }
+
+.side .md table td {
+    border-bottom: 1px solid #e8e8e8;
+    border-right: 0 solid #eee;
+    padding: 2px 0;
+    }
+
+.md table a {
+    border: 0;
+    font-weight: 700;
+    color: #222;
+    }
+
+.md table a:hover {
+    color: #0f326a;
+    }
+
+div.side div.spacer div.titlebox div.usertext-body div.md h4 {
+    font-size: 9px;
+    margin-top: -9px;
+    margin-left: 35%;
+    margin-right: 30%;
+    color: #ccc;
+    }
+
+/* Sidebar icon hover fix
+------------------------------------------------------------------ */
+
+.side {
+    margin-top: 82px;
+    }
+
+.title a[href*="reddit.com/domain"]:before {
+    content: "   " !important;
+    }
+
+/* Sidebox
+------------------------------------------------------------------ */
+.titlebox blockquote:first-child a:hover {
+    color: #000;
+    background-color:#DDD !important;
+    }
+
+.sidecontentbox .title h1 {
+    display: block;
+    }
+
+.side {
+    background-color: #E5E5E5;
+    padding: 3px;
+    border: 1px solid #aaa;
+    border-radius: 10px;
+    }
+
+.sidecontentbox {
+    background-color: #fff;
+    padding: 3px;
+    border: 1px solid #aaa;
+    border-radius: 10px;
+    font-size: 8.5pt !important;
+    }
+
+.sidecontentbox ul.content li {
+    font-size: small;
+    margin-bottom: 2px;
+    }
+
+.icon-menu a {
+    background-color: transparent;
+    }
+
+.titlebox {
+    padding: 10px;
+    padding-left: 3px !important;
+    background-color: #fff;
+    background-color: #e5e5e5;
+    border: 1px solid #aaa;
+    color: #777;
+    border-radius: 10px;
+    }
+
+.titlebox .bottom {
+    border: 0;
+    }
+
+.md h1,
+.md h2,
+.md h3,
+.md h4,
+.md h5,
+.md h6 {
+    font-size: medium;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 5px;
+    border: 0;
+    }
+
+#header-bottom-left {
+    width: 100%;
+    }
+
+.hover.pagename.redditname {
+    display: inline-block;
+    margin-top: 105px;
+    margin-left: 0px;
+    color: #fff;
+    background-color: transparent;
+    border-radius: 4px;
+    text-shadow: 1px 1px 1px black, -1px -1px 1px black, -1px 1px 1px black, 1px -1px 1px #000;
+    }
+
+.hover.pagename.redditname a {
+    color: #2e2e2e;
+    background-color: #cecece;
+    padding: 5px;
+    border-top-right-radius: 4px;
+    text-shadow: none;
+    border-top-left-radius: 4px;
+    }
+
+.tagline {
+    font-size:x-small;
+    }
+
+p.tagline a:hover {
+    color:#00235d;
+    }
+
+.domain {
+    font-size:0;
+    color:#fff;
+    }
+
+.domain a {
+    font-size: x-small;
+    background-color: #fff;
+    display: inline-block !important;
+    margin-right: .5em;
+    padding: 0 2px;
+    border: 1px solid #ddd;
+    border-radius: 2px;
+    }
+
+.domain a:hover {
+    text-decoration:underline;
+    }
+
+#preview {
+    float:right;
+    width:20em;
+    margin-right:10px;
+    margin-top:3px;
+    margin-bottom:5px;
+    }
+
+#preview span {
+    color:#fff;
+    }
+
+#preview #previewbox {
+    border-width:.2em;
+    border-style:none;
+    border-color:#fff;
+    padding:1em;
+    }
+
+#preview-table > table {
+    border-width:.2em;
+    border-style:dashed;
+    border-color:lightgray;
+    padding:5px;
+    margin:5px;
+    width:100%;
+    }
+
+.link .title {
+    font-weight:400;
+    }
+
+/* Fancy comments
+------------------------------------------------------------------ */
+.comment {
+border-radius: 3px !important;
+margin-left: 10px !important;
+margin-right: 8px!important;
+margin-top: 0!important;
+margin-bottom: 8px!important;
+border: 1px solid #e6e6e6 !important;
+padding: 5px 8px 0 5px!important;
+overflow: hidden !important;
+}
+.comment .title {
+    margin-top: 10px;
+    }
+.commentarea .panestack-title {
+    display: none !important;
+    }
+.content .menuarea .flat-list .selected a {
+    color: #FF4500 !important;
+    }
+.dropdown.lightdrop .selected {
+    color: #51a738 !important;
+    }
+.nestedlisting .tagline .expand {
+    color: #999 !important;
+    position: relative !important;
+    overflow: hidden !important;
+    }
+.nestedlisting .tagline .expand:hover {
+    background-color: transparent !important;
+    }
+.comment .collapsed .expand {
+    color: #999 !important;
+    }
+.comment .collapsed .expand:hover {
+    background-color: transparent !important;
+    }
+.nestedlisting .buttons a {
+    font-weight: 400 !important;
+    }
+
+/* remove create/submit bar and change colors of submit
+.titlebox .tagline {
+    background-color: white;
+    border-radius: 4px;
+    padding: 2px;
+    border: 1px solid #C8C864;
+    }
+
+.sidebox.create{
+    display: none;
+    }
+*/
+
+
+/* Submit buttons
+------------------------------------------------------------------ */
+
+/* Color */
+.submit .morelink {
+    border-radius: 4px;
+    background: #369;
+    background-image: -webkit-linear-gradient(top,#369,#2A547D);
+    background-image: -moz-linear-gradient(top,#369,#2A547D);
+    background-image: -ms-linear-gradient(top,#369,#2A547D);
+    background-image: -o-linear-gradient(top,#369,#2A547D);
+    }
+.submit .morelink:hover {
+    background-color: #cecece;
+    background-image: -webkit-linear-gradient(top,#cecece,#BFBFBF);
+    background-image: -moz-linear-gradient(top,#cecece,#BFBFBF);
+    background-image: -ms-linear-gradient(top,#cecece,#BFBFBF);
+    background-image: -o-linear-gradient(top,#cecece,#BFBFBF);
+    border: 0px solid #c8c864;
+    color: #2e2e2e;
+    }
+.submit .morelink a:hover{
+    color: #2e2e2e;
+    }
+/* Message the moderators link
+------------------------------------------------------------------ */
+.sidecontentbox a.helplink {
+    float: right;
+    margin-top: 17px;
+    background-color: #cecece;
+    background-image: -webkit-linear-gradient(top,#cecece,#BFBFBF);
+    background-image: -moz-linear-gradient(top,#cecece,#BFBFBF);
+    background-image: -ms-linear-gradient(top,#cecece,#BFBFBF);
+    background-image: -o-linear-gradient(top,#cecece,#BFBFBF);
+    border:1px solid #aeaeae;
+    border-radius: 4px;
+    padding: 2px;
+    }
+
+/* Adjusts the button */
+.morelink {
+    width: 149px;
+    height: 40px;
+    float: left;
+    color: #ffffff;
+    font-weight: bold;
+    border: 0px;
+    padding: 0px;
+    position: relative;
+    }
+.morelink a {
+    display: block;
+    text-align: center;
+    vertical-align: bottom;
+    padding: 0;
+    color: #ffffff;
+    font-weight: normal;
+    width: 100% !important;
+    font-size: 14px;
+    line-height: 40px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    text-transform: capitalize ;
+    }
+
+/* Moves the buttons
+------------------------------------------------------------------ */
+form.submit .spacer,
+form.create .spacer {
+    float: none;
+    width: auto;
+    }
+.sidebox .subtitle {
+    font-size: 19px;
+    }
+.sidebox.submit .spacer a,
+.sidebox.create .spacer a {
+    display: none;
+    }
+.submit .spacer .status .a {
+    display: inline;
+    }
+.morelink .nub {
+    display: none;
+    }
+.sidebox.submit {
+    position: absolute;
+    width: 152px;
+    top: 177px;
+    }
+.sidebox.submit.submit-link {
+    right: auto;
+    }
+.sidebox.submit.submit-text {
+    left: auto;
+    right: 0;
+    padding-right: 5px;
+    }
+.morelink a:hover {
+    text-decoration: none;
+    }
+.morelink .nub,
+.morelink .nub:hover {
+    display: none;
+    }
+
+/* Other
+------------------------------------------------------------------ */
+.create {
+    display: none;
+    }
+.login-form .submit {
+    height: auto;
+    }
+.login-form-side {
+    border: 0px;
+    padding: 0px;
+    }
+.pref-lang {
+    margin-right: 6px;
+    }
+    body .keyHighlight {
+    border: 0px;
+    background: #eee;
+    outline: none;
+    }
+.submit .spacer, .create .spacer {
+    float: right;
+    background: none;
+    width: 190px;
+    padding: 0px;
+    margin: 0px;
+    }
+
+/*=== Subscribe/Side buttons ===*/
+
+/* Subscribe */
+.fancy-toggle-button .add,
+.RESshortcutside,
+.RESDashboardToggle {
+    background-image: none !important;
+    background-color: #7bb850;
+    border-radius: 0px !important;
+    }
+
+/* Unsubscribe */
+.fancy-toggle-button .remove,
+.RESshortcutside.remove,
+.RESDashboardToggle.remove {
+    background-color: #dd513b;
+    border-radius: 0px !important;
+    background-image: none !important;
+    }
+
+/* top menu tabs*/
+.tabmenu li.selected a {
+    border-style: solid;
+    border-width: 0;
+    color: #fff;
+    z-index: 100;
+    background-color: #257;
+    }
+
+.tabmenu li a {
+    -moz-border-radius-topleft: 4px;
+    -webkit-border-top-left-radius: 4px;
+    -moz-border-radius-topright: 4px;
+    -webkit-border-top-right-radius: 4px;
+    color: #fff;
+    background-color: #257;
+    }
+
+.tabmenu li a:hover {
+    background-color: #257;
+    }
+
+.tabmenu li.selected a:hover {
+    background-color: #257;
+    }
+
+.bottommenu {
+    color: #999;
+    font: normal 10px Tahoma, Arial, sans-serif;
+    }
+
+.pagename a {
+    color: #fff;
+    }
+
+.pagename {
+    color: #fefefe;
+    font-size: 1.1em !important;
+    }
+
+h1.redditname > a {
+    color: #fff;
+    }
+
+/* Headers */
+#header-bottom-right {
+    color: #fff;
+    font-size: 12px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    word-spacing: -1px;
+    background: transparent;
+    border: 0px solid #D2D2D2;
+    border-top: 0px;
+    border-right: 0px;
+    border-bottom: 0px;
+    border-left: 0px;
+    /*box-shadow: -2px 0px 3px #AAA !important;*/
+    -webkit-border-top-left-radius: 3px !important;
+    -moz-border-radius-topleft: 3px !important;
+    -webkit-border-bottom-left-radius: 3px !important;
+    -moz-border-radius-bottomleft: 3px !important;
+    border-top-left-radius: 3px !important;
+    border-bottom-left-radius: 3px !important;
+   background: #369;
+    background-image: -webkit-linear-gradient(top,#369,#2A547D);
+    background-image: -moz-linear-gradient(top,#369,#2A547D);
+    background-image: -ms-linear-gradient(top,#369,#2A547D);
+    background-image: -o-linear-gradient(top,#369,#2A547D);
+    }
+/* non-res fixes (lol) */
+.userkarma {
+color: #FFF;
+}
+.dropdown.srdrop .selected{
+color:#FFF;
+}
+
+/* adds a line between posts on the front of subreddit*/
+.content #siteTable .link {
+    margin-bottom: 0;
+    border-bottom: 1px solid #ececec;
+    }
+
+/* Fix transparency in the sidebar and add gold for mod stuff*/
+
+.sidebox .spacer {
+    background: transparent !important;
+    }
+
+.leavemoderator {
+    background-color: #fffDCC !important;
+    }
+
+/* Page Colors */
+
+#header-bottom-right a {
+    color: #fff;
+    }
+
+p {
+    margin-top: 3px;
+    margin-bottom: 5px;
+    }
+
+p.tagline a {
+    color: #616f99;
+    }
+
+p.tagline a:hover {
+    color: #00235d;
+    }
+
+#preview {
+    float: right;
+    width: 20em;
+    margin-right: 10px;
+    margin-top: 3px;
+    margin-bottom: 5px;
+    }
+
+#preview span {
+    color: #fff;
+    }
+
+#preview #previewbox {
+    border-width: .2em;
+    border-style: none;
+    border-color: #fff;
+    padding: 1em;
+    }
+
+#preview-table > table {
+    border-width: .2em;
+    border-style: dashed;
+    border-color: lightgray;
+    padding: 5px;
+    margin: 5px;
+    width: 100%;
+    }
+
+/* Comments */
+
+.comment .title {
+    margin-top:10px;
+    }
+
+.commentarea .panestack-title {
+    display:none !important;
+    }
+
+.content .menuarea .flat-list .selected a {
+    color:#FF4500 !important;
+    }
+
+.dropdown.lightdrop .selected {
+    color:#51a738 !important;
+    }
+
+.nestedlisting .tagline .expand {
+    color:#999 !important;
+    position:relative !important;
+    overflow:hidden !important;
+    }
+
+.nestedlisting .tagline .expand:hover {
+    background-color:transparent !important;
+    }
+
+.comment .collapsed .expand {
+    color:#999 !important;
+    }
+
+.comment .collapsed .expand:hover {
+    background-color:transparent !important;
+    }
+
+.nestedlisting .buttons a {
+    font-weight:400 !important;
+    }
+
+.titlebox .md {
+    font-size:8.5pt !important;
+    font-weight:400 !important;
+    }
+
+.titlebox .md em {
+font-style:normal;
+}
+.titlebox .usertext-body {
+    border-top:10px !important;
+    border-bottom:0 !important;
+    }
+
+
+.sidebox.gold {
+    padding:10px 0 0 !important;
+    }
+
+
+
+
+/* Search */
+#search {
+    margin:0 0 10px !important;
+    padding:0 !important;
+    }
+#search input[type=text] {
+    -moz-border-radius:5px !important;
+    -webkit-border-radius:5px !important;
+    width:271px !important;
+    height:20px !important;
+    font-size:12px !important;
+    text-transform:uppercase;
+    color:#999 !important;
+    background-color:#fff !important;
+    background-position:270px 0 !important;
+    background-repeat:no-repeat !important;
+    }
+#search input[type=text]:hover {
+    background-position:270px -25px !important;
+    background-repeat:no-repeat !important;
+    background-color:#fff !important;
+    }
+
+#search input[type=text]:active {
+    background-position:270px -50px !important;
+    background-repeat:no-repeat !important;
+    background-color:#fff !important;
+    }
+#searchexpando {
+z-index:9999999999999;
+    }
+
+
+/* Link info (on posts)*/
+.linkinfo {
+    border-top:1px solid #DDD !important;
+    background-color:#F0F3FC;
+    border-right:0 !important;
+    border-bottom:0 !important;
+    border-left:0 !important;
+    margin-bottom:0 !important;
+    padding-top:10px !important;
+    padding-left:10px !important;
+    }
+
+.linkinfo .score,
+.linkinfo .number,
+.linkinfo .word {
+    font-size:11px !important;
+    font-weight:400 !important;
+    margin-top:2px !important;
+    line-height:150% !important;
+    }
+
+.sidecontentbox.trophy-area {
+    margin-top:-1px !important;
+    }
+
+.sidecontentbox.trophy-area .trophy-table {
+    font-size:8pt !important;
+    }
+
+.sidecontentbox.trophy-area .trophy-table .trophy-info {
+    max-width: 100px !important;
+    }
+
+.sidecontentbox {
+    margin: 10px 0 0 !important;
+    padding: 10px 10px 0 !important;
+    border-top: 1px solid #DDD !important;
+    }
+
+.sidecontentbox .content {
+    margin: 0 !important;
+    font-size: 9pt !important;
+    padding: 5px 0 0 !important;
+    background-color: transparent !important;
+    border: 0 !important;
+    }
+
+.content .reddit-link-title {
+    color: #000 !important;
+    font-size: 8pt !important;
+    }
+
+/* RES Fixes*/
+
+#sr-header-area,
+#sr-more-link {
+    background: #369;
+    background-image: -webkit-linear-gradient(top,#369,#003F5E);
+    background-image: -moz-linear-gradient(top,#369,#003F5E);
+    background-image: -ms-linear-gradient(top,#369,#003F5E);
+    background-image: -o-linear-gradient(top,#369,#003F5E);
+    color: #fff;
+    padding-left: 150px;
+    border: none !important;
+    }
+#sr-header-area .width-clip {
+    position: absolute;
+    left: 151px;
+    right: 0;
+    }
+
+#sr-header-area a {
+    color:#fff;
+    }
+#RESShortcutsRight,
+#RESShortcutsLeft,
+#RESShortcutsAdd,
+#RESShortcutsTrash,
+#RESShortcutsViewport,
+#RESShortcutsEditContainer {
+    color: #fff;
+    background-color: transparent;
+    }
+
+/* Change upvotes and downvotes to hits and strikeouts*/
+
+div.linkinfo .upvotes span.word {
+    display: none;
+    }
+
+div.linkinfo .upvotes span.number:after {
+    content: " hits";
+    }
+
+.linkinfo .upvotes {
+    font-size: 80%;
+    }
+
+div.linkinfo .downvotes span.word {
+    display: none;
+    }
+
+div.linkinfo .downvotes span.number:after {
+    content: " strikeouts";
+    }
+
+.md blockquote,
+.help blockquote {
+    padding-left: 5px;
+    margin: 0px;
+    margin-right: 0px;
+    }
+
+/* Change infobar colors to fit in with current theme*/
+
+.infobar {
+    background-color: #E5E5E5;
+    padding: 5px 10px;
+    margin: 5px 305px 5px 0;
+    border: 1px solid #2E2E2E;
+    font-size: small;
+    border-radius: 5px;
+    }
+
+/* Add border radius to stuff for modern browsers*/
+
+.usertext-edit textarea {
+    border-radius: 5px;
+    }
+/* Fix for non-res users */
+
+.drop-choices {
+    background-color: #257;
+    color: #fff;
+    }
+
+.drop-choices a.choice:hover {
+    background-color: #369;
+    }
+
+.drop-choices.lightdrop.inuse a {
+    background-color: #fff;
+    color: #000;
+    }
+
+.drop-choices.lightdrop.inuse a:hover {
+    background-color: #000;
+    color: #fff;
+    }
+
+/* Self posts */
+
+.link .usertext .md {
+    border: 1px solid #E5E5E5;
+    }
+
+/* Show edit times */
+
+.edited-timestamp::after {
+    content: " (" attr(title) ")";
+    font-size: 90%;
+    }
+
+/* Wiki
+------------------------------------------------------------------ */
+
+.wiki .editlink {
+    display: none;
+    }
+.wiki.md table td {
+    padding: 5px;
+    }
+
+/* Get them subscribed
+------------------------------------------------------------------ */
+
+body:not(.subscriber) #siteTable:before {
+    content: " You're not subscribed to this subreddit yet, click the subscribe button on the right!";
+    display: block;
+    max-width: 800px;
+    background-color: #F07171;
+    border: 1px solid #ED1515;
+    padding: 4px 8px;
+    margin: 5px 305px 5px 0;
+    border-radius: 2px;
+    font-size: small;
+    color: #eee;
+    font-weight: bold;
+    }
+
+.side .content:before,
+.submit-page .content:before {
+    content: " " !important;
+    }
+
+.popup {
+    z-index: 900000000000 !important;
+    }
+
+/* Linkable notification at the top
+------------------------------------------------------------------ */
+
+.content {
+    margin-top: 30px;
+    background-color:#FFF;
+    border-radius:5px;
+    padding:4px;
+border:3px solid #cecece;
+    }
+
+.titlebox form {
+    position: static;
+    }
+
+.titlebox .usertext-body .md p > em {
+    background-color: #cecece;
+    background-image: -webkit-linear-gradient(top,#cecece,#BFBFBF);
+    background-image: -moz-linear-gradient(top,#cecece,#BFBFBF);
+    background-image: -ms-linear-gradient(top,#cecece,#BFBFBF);
+    background-image: -o-linear-gradient(top,#cecece,#BFBFBF);
+padding: 5px;
+border: 1px solid #aeaeae;
+border-radius: 3px;
+position: absolute;
+top: 141px;
+left: 5px;
+z-index: 0;
+margin: 0;
+white-space: nowrap;
+list-style: none;
+display: block;
+overflow: hidden;
+width: 99%;
+    }
+
+.titlebox .usertext-body .md p > em li {
+    margin: 0;
+    }
+
+.titlebox .usertext-body .md p > em a {
+    font-style: normal;
+    font-weight: bold;
+    text-decoration: underline;
+    color: #2e2e2e;
+    }
+
+/* Report button message
+------------------------------------------------------------------ */
+
+.report-button:hover:before {
+    position: absolute;
+    display: block;
+    z-index: 1000;
+    padding: 5px;
+    border: 1px solid #333;
+    background-color: #fff;
+    content: "Please message us if something you report is not obvious.";
+    text-align: center;
+    font-size: 10px;
+    font-weight: 400;
+    margin-left: 5px;
+    margin-top: 5px;
+    }
+
+.titlebox {
+    margin-top:18px;
+    }
+
+.wikipage a[href$="/spoiler"] {
+    background-color:#000 !important;
+    color:#000 !important;
+    }
+
+.wikipage a[href$="/spoiler"]:hover {
+    background-color:#fff !important;
+    }
+
+/* BEGIN SIDEBAR HEADERS */
+
+.titlebox,
+.sidecontentbox {
+    padding: 10px;
+    background-color: #F0F3FC;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    }
+
+.titlebox .bottom {
+    border:0;
+    }
+
+.titlebox form.toggle {
+    background-color:transparent;
+    }
+
+.titlebox .usertext {
+    margin:15px 0;
+    line-height:120%;
+    font-size:small;
+    }
+
+.titlebox .usertext .md {
+    margin:0;
+    padding:0;
+    overflow:visible;
+    }
+
+.titlebox .usertext .md > h1,
+.titlebox .redditname,
+.sidecontentbox .title h1,
+.sidecontentbox.collapsible.title h1 {
+    border:0;
+    margin:0;
+    background-repeat:repeat-x;
+    background-position:top;
+    background: #369;
+    background-image: -webkit-linear-gradient(top,#369,#2A547D);
+    background-image: -moz-linear-gradient(top,#369,#2A547D);
+    background-image: -ms-linear-gradient(top,#369,#2A547D);
+    background-image: -o-linear-gradient(top,#369,#2A547D);
+    color:#fff;
+    padding:5px 10px;
+    padding-left:20px;
+    padding-right:0;
+    margin-right:-10px;
+    margin-left:-15px;
+    border-bottom:1px solid #369;
+    margin-bottom:5px;
+    margin-top:10px;
+    z-index:100;
+    }
+
+.titlebox .usertext .md > h1:after,
+.titlebox .redditname:after,
+.sidecontentbox .title h1:after,
+.sidecontentbox.collapsible.title h1:after {
+    display: block;
+    content: "";
+    border-color: transparent gray transparent transparent;
+    border-style: solid;
+    border-width: 15px;
+    height: 0;
+    width: 0;
+    position: absolute;
+    z-index: -1;
+    margin-left: -35px;
+    margin-top: -9px;
+    }
+.footer {
+    background-color: #cecece;
+    background-image: -webkit-linear-gradient(top,#cecece,#BFBFBF);
+    background-image: -moz-linear-gradient(top,#cecece,#BFBFBF);
+    background-image: -ms-linear-gradient(top,#cecece,#BFBFBF);
+    background-image: -o-linear-gradient(top,#cecece,#BFBFBF);
+    border: 1px solid #aeaeae;
+    border-radius:3px;
+    }
+.footer .col {
+    border: 0 !important;
+    }
+.footer a {
+    color: #2e2e2e !important;
+    }
+
+/* ------random junk----- */
+
+.sidebox .subtitle {
+    display: none;
+    }
+.disabled:after {
+    content: " Submissions are turned off";
+    font-size: 10px;
+    background-color: #fff;
+    }
+.sidebox.submit.disabled {
+    width: 303px !important;
+    }
+.wiki-page .wiki-page-content .discussionlink,
+.discussionlink {
+    display: none !important;
+    }
+
+.bottom-area:before {
+    content: "Please don't comment with short urls or tumblr.com links they are auto-spamfiltered. Don't respond to trolls or spammers. Click the report button or send a modmail";
+    font-size: xx-small;
+    }
+
+
+.submit-page .status:after {
+    display: block;
+    content: "By submitting you agree that you have read the subreddit rules in the sidebar.";
+    }
+
+
+.sr-bar a:before {
+    display: none;
+    }
+
+/* =============================================================== */
+/* RES Nightmode work. Incomplete. */
+
+.res.res-nightmode.organic-listing .tabmenu,
+.res.res-nightmode #header-bottom-left {
+    background: transparent !important;
+    }
+.res.res-nightmode .titlebox,
+.res.res-nightmode .sidecontentbox,
+.res.res-nightmode .footer {
+    background-color:#2e2e2e;
+    }
+.res.res-nightmode .side a {
+    color:#fff;
+    }
+.res.res-nightmode .titlebox blockquote,
+.res.res-nightmode .sidecontentbox .content {
+    background-color: transparent !important;
+    }
+.res.res-nightmode span[class="hover pagename redditname"] a {
+    font-size:14px !important;
+    }
+.res.res-nightmode .entry .domain a {
+    color: #2e2e2e !important;
+    }
+
+ /* Prevent Reddit Companion from upsetting the layout */
+ html{position:relative;}
+
+
+.side table td {
+position: relative;
+}
